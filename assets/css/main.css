@@ -1552,6 +1552,13 @@ header > p {
     display: inline-block;
 }
 
+.image:hover {
+    color: #424242;
+    transition: all .3s ease-in;
+    opacity: 1;
+    transform: scale(1.2);
+}
+
 .image img {
     display: block;
     width: 100%;
