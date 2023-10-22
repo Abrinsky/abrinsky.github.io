@@ -65,7 +65,7 @@ footer {
 }
 
 #tab-content {
-   flex-grow: 1;
+    flex-grow: 1;
 }
 
 .content {
@@ -131,7 +131,9 @@ footer {
 
 /* Animate the value */
 @keyframes rotate {
-    to { --angle: 360deg; }
+    to {
+        --angle: 360deg;
+    }
 }
 
 /* Change the play state to running on :hover, etc. */
