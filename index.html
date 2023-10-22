@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://unpkg.com/hyperscript.org@0.9.11"></script>
     <link rel="stylesheet" href="assets/styles/styles.css" />
   </head>
@@ -18,7 +19,7 @@
           Profile
         </button>
         <button
-                _="on click
+          _="on click
                 hide .tab-content
                 show #software"
         >
@@ -38,14 +39,15 @@
         >
           3D Art
         </button>
+
       </div>
     </section>
     <section>
       <div id="profile" class="profile tab-content">
-        <div class="picture-column ">
+        <div class="picture-column">
           <img class="" alt="hero" src="assets/images/portrait.jpg" />
         </div>
-        <div class="namedesc-column ">
+        <div class="namedesc-column">
           <h1 class="name">Abe Galinsky</h1>
           <p class="desc">
             I'm a full-stack software developer with a diverse background in
@@ -68,15 +70,17 @@
     </section>
   </body>
   <footer>
-    <!--      <div class="">-->
-    <!--        <p class="">-->
-    <!--          Abe Galinsky-->
-    <!--        </p>-->
-    <!--      </div>-->
-    <!--      <div class="">-->
-    <!--        <p class="">-->
-    <!--          2023-->
-    <!--        </p>-->
-    <!--      </div>-->
+    <button
+            _="on click
+                go to url https://www.linkedin.com/in/amg001/"
+    >
+      <i class="fa fa-linkedin-square fa-2x"></i>
+    </button>
+    <button
+            _="on click
+                go to url https://twitter.com/_Abrinsky"
+    >
+      <i class="fa fa-twitter-square fa-2x"></i>
+    </button>
   </footer>
 </html>

@@ -43,7 +43,7 @@ button:hover {
 
 footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
 }
 
@@ -77,9 +77,9 @@ footer {
 .picture-column img {
     width: 100%;
     height: auto;
-    border-radius: 50%;
+    border-radius: 1rem;
     object-fit: cover;
-    filter: drop-shadow(0 0 5px #333333);
+    filter: drop-shadow(0 0 4px #333333);
 }
 
 .namedesc-column {
