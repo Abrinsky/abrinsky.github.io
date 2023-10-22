@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://unpkg.com/htmx.org@1.9.6"></script>
     <script src="https://unpkg.com/hyperscript.org@0.9.11"></script>
     <link rel="stylesheet" href="assets/styles/styles.css" />
   </head>
@@ -11,73 +15,49 @@
   <body class="">
     <section>
       <div class="btn-group">
-        <button
-          _="on click
-                hide .tab-content
-                show #profile"
-        >
+        <button hx-get="/assets/content/profile.html" hx-target="#tab-content">
           Profile
         </button>
-        <button
-          _="on click
-                hide .tab-content
-                show #software"
-        >
+        <button hx-get="/assets/content/software.html" hx-target="#tab-content">
           Software
         </button>
-        <button
-          _="on click
-                hide .tab-content
-                show #gamedev"
-        >
+        <button hx-get="/assets/content/gamedev.html" hx-target="#tab-content">
           Game Dev
         </button>
-        <button
-          _="on click
-                hide .tab-content
-                show #3dart"
-        >
+        <button hx-get="/assets/content/blendart.html" hx-target="#tab-content">
           3D Art
         </button>
 
+        <!--        _="on click-->
+        <!--        transition .tab-content opacity to 0% over 100ms-->
+        <!--        then settle-->
+        <!--        hide .tab-content-->
+        <!--        show #blendart-->
+        <!--        transition .tab-content opacity to unset over 100ms"-->
+
+        <!--        <button-->
+        <!--          hx-get="/assets/content/profile.html"-->
+        <!--          hx-target="#profile"-->
+        <!--        >-->
+        <!--          Games-->
+        <!--        </button>-->
       </div>
     </section>
-    <section>
-      <div id="profile" class="profile tab-content">
-        <div class="picture-column">
-          <img class="" alt="hero" src="assets/images/portrait.jpg" />
-        </div>
-        <div class="namedesc-column">
-          <h1 class="name">Abe Galinsky</h1>
-          <p class="desc">
-            I'm a full-stack software developer with a diverse background in
-            both tech and management.
-          </p>
-          <p class="desc">
-            I've had the opportunity to work with a wide range of technologies
-            and I pride myself on my ability to communicate complex ideas in
-            simple terms to my customers.
-          </p>
-          <p class="desc">
-            My experiences range from hands-on coding to overseeing multiple
-            departments, and I'm always eager to learn and adapt. In this
-            portfolio, you'll find a blend of my technical skills and
-            collaborative projects that showcase my balanced approach to
-            problem-solving and team leadership.
-          </p>
-        </div>
-      </div>
-    </section>
+    <section
+      id="tab-content"
+      hx-get="/assets/content/blendart.html"
+      hx-trigger="load"
+    ></section>
   </body>
   <footer>
     <button
-            _="on click
+      _="on click
                 go to url https://www.linkedin.com/in/amg001/"
     >
       <i class="fa fa-linkedin-square fa-2x"></i>
     </button>
     <button
-            _="on click
+      _="on click
                 go to url https://twitter.com/_Abrinsky"
     >
       <i class="fa fa-twitter-square fa-2x"></i>
