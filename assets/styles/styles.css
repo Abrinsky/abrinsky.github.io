@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f3f3f3;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    width: 80%;
+    max-width: 80%;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+button {
+    background-color: rgba(243, 243, 243, 0);
+    border: none;
+    color: black;
+    width: auto;
+    height: auto;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: x-large;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd; /* Adds a hover effect, change the color to suit your style */
+    color: black; /* Change text color on hover */
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.debug {
+    border: 1px solid red;
+}
+
+.btn-group {
+    display: flex;
+}
+
+.btn-group > button {
+    border-right: 1px solid lightgray;
+}
+
+.btn-group > button:last-child {
+    border-right: none;
+}
+
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture-column {
+    flex: 1;
+}
+
+.picture-column img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: drop-shadow(0 0 5px #333333);
+}
+
+.namedesc-column {
+    flex: 2;
+    padding: 1rem 6rem;
+}
+
+.namedesc-column .name {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.namedesc-column .desc {
+    font-size: x-large;
+    line-height: 1.6;
+}
