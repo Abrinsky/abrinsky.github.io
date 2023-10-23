@@ -190,3 +190,19 @@ footer {
     filter: drop-shadow(0 0 4px #333333);
 }
 
+.video-collection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.video-collection video {
+    border-radius: 1rem;
+    margin: 1rem;
+    max-height: 500px;
+    max-width: 30%;
+    height: auto;
+    object-fit: cover;
+    filter: drop-shadow(0 0 4px #333333);
+}
