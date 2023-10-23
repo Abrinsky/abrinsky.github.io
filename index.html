@@ -1,259 +1,72 @@
-<!DOCTYPE HTML>
-<!--
-	Astral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="UTF-8" />
     <title>Portfolio</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-    <link rel="stylesheet" href="assets/css/main.css"/>
-    <noscript>
-        <link rel="stylesheet" href="assets/css/noscript.css"/>
-    </noscript>
-</head>
-<body class="is-preload">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://unpkg.com/htmx.org@1.9.6"></script>
+    <script src="https://unpkg.com/hyperscript.org@0.9.11"></script>
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+  </head>
 
-<!-- Wrapper-->
-<div id="wrapper">
+  <body class="">
+    <section>
+      <div class="btn-group">
+        <button hx-get="/assets/content/profile.html" hx-target="#tab-content">
+          Profile
+        </button>
+        <button hx-get="/assets/content/software.html" hx-target="#tab-content">
+          Software
+        </button>
+        <button hx-get="/assets/content/gamedev.html" hx-target="#tab-content">
+          Game Dev
+        </button>
+        <button hx-get="/assets/content/blendart.html" hx-target="#tab-content">
+          3D Art
+        </button>
 
-    <!-- Nav -->
-    <nav id="nav">
-        <a href="#" class="icon solid fa-home"><span>Home</span></a>
-        <a href="#software" class="icon solid fa-code"><span>Software</span></a>
-        <a href="#games" class="icon solid fa-gamepad"><span>Games</span></a>
-        <a href="#blender" class="icon solid fa-square"><span>Blender</span></a>
-        <a href="https://www.linkedin.com/in/amg001/" class="icon brands fa-linkedin"><span>LinkedIn</span></a>
-        <a href="https://github.com/Abrinsky" class="icon brands fa-github"><span>LinkedIn</span></a>
-    </nav>co
+        <!--        _="on click-->
+        <!--        transition .tab-content opacity to 0% over 100ms-->
+        <!--        then settle-->
+        <!--        hide .tab-content-->
+        <!--        show #blendart-->
+        <!--        transition .tab-content opacity to unset over 100ms"-->
 
-    <!-- Main -->
-    <div id="main">
-
-        <!-- Me -->
-        <article id="home" class="panel intro">
-            <header>
-                <h1>Abe Galinsky</h1>
-                <p>Software Developer</p>
-            </header>
-            <a href="#software" class="jumplink pic">
-                <span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
-                <img src="images/portrait.jpg" alt=""/>
-            </a>
-        </article>
-
-        <!-- Software -->
-        <article id="software" class="panel">
-            <header>
-                <h2>Software</h2>
-            </header>
-            <p>
-                A showcase of software projects I have worked on or been involved in.
-            </p>
-            <section>
-                <div class="row">
-                </div>
-            </section>
-            <p>
-                Two regional programming competitions, achieved 2nd place team in college division.<br>
-                2013 we used C++ as a 2-person team.<br>
-                2015 we used Java as a 3-person team.
-            </p>
-            <section>
-                <div class="row">
-                    <div class="col-4 col-6-medium col-12-small">
-                        <img src="images/software/competition/DSC_2818~2.jpg" class="image fit" alt="">
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                        <img src="images/software/competition/IMG_20150423_153921~2.jpg" class="image fit" alt="">
-                    </div>
-                </div>
-            </section>
-
-        </article>
-
-        <!-- Contact -->
-        <article id="games" class="panel">
-            <header>
-                <h2>Games</h2>
-                <h6>Beware the audio on some, they can be quite loud</h6>
-            </header>
-            <p>
-                Unity Projects
-            </p>
-            <section>
-                <div class="row">
-                    <div class="col-4 col-6-medium col-12-small">
-                        <video class="responsive-video" width="1920" muted loop playsinline controls>
-                            <source src="https://i.gyazo.com/0bc4c876ecd0ab9bd84237d8000a3abf.mp4"
-                                    type="video/mp4"/>
-                        </video>
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                        <video class="responsive-video" width="1920" muted loop playsinline controls>
-                            <source src="https://i.gyazo.com/21dae94ff2870fe9d8a776af1dabfaeb.mp4"
-                                    type="video/mp4"/>
-                        </video>
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                        <video class="responsive-video" width="1920" muted loop playsinline controls>
-                            <source src="https://i.gyazo.com/d9c8135cd0c2b195ecb8e6b11ff7639d.mp4"
-                                    type="video/mp4"/>
-                        </video>
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                        <video class="responsive-video" width="1920" muted loop playsinline controls>
-                            <source src="https://i.gyazo.com/c5da64f1ea2405d2d4ae7a432ebe5689.mp4"
-                                    type="video/mp4"/>
-                        </video>
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                        <video class="responsive-video" width="1920" muted loop playsinline controls>
-                            <source src="https://i.gyazo.com/bb3c2d53e002c1cb154692eacceb5d80.mp4"
-                                    type="video/mp4"/>
-                        </video>
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                        <video class="responsive-video" width="1920" muted loop playsinline controls>
-                            <source src="https://i.gyazo.com/4b8f8ccfea80a75ee92aef91c907d899.mp4"
-                                    type="video/mp4"/>
-                        </video>
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                        <video class="responsive-video" width="1920" muted loop playsinline controls>
-                            <source src="https://i.gyazo.com/71fd43db22ac50a064294d92752295bc.mp4"
-                                    type="video/mp4"/>
-                        </video>
-                    </div>
-                </div>
-            </section>
-            <p>
-                Unreal Projects
-            </p>
-            <section>
-                <div class="row">
-                    <div class="col-4 col-6-medium col-12-small">
-                        <video class="responsive-video" width="1920" muted loop playsinline controls>
-                            <source src="https://i.gyazo.com/4106c7c38f33cec8053b11f847017828.mp4"
-                                    type="video/mp4"/>
-                        </video>
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                        <video class="responsive-video" width="1920" muted loop playsinline controls>
-                            <source src="https://i.gyazo.com/835d8cd70e931612f6fe0c592d9dd271.mp4"
-                                    type="video/mp4"/>
-                        </video>
-                    </div>
-                </div>
-            </section>
-            <p>
-                Godot Projects
-            </p>
-            <section>
-                <div class="row">
-                    <div class="col-4 col-6-medium col-12-small">
-                        <video class="responsive-video" width="1920" muted loop playsinline controls>
-                            <source src="https://i.gyazo.com/6b26d10d8398ecb84e2a047b28574aeb.mp4"
-                                    type="video/mp4"/>
-                        </video>
-                    </div>
-                </div>
-            </section>
-        </article>
-
-        <!-- Software -->
-        <article id="blender" class="panel">
-            <header>
-                <h2>Blender</h2>
-            </header>
-            <p>
-                Modeling practice using basic tools to make poly characters and
-            </p>
-            <section>
-                <div class="row">
-                    <div class="col-4 col-6-medium col-12-small">
-                        <img src="images/blender/BlockManRenderDark.jpg" class="image fit" alt="">
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                        <img src="images/blender/BlockPeopleRenderDark.jpg" class="image fit" alt="">
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                        <img src="images/blender/BlockPeopleRender.jpg" class="image fit" alt="">
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                        <img src="images/blender/Broken_Cube.png" class="image fit" alt="">
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="row">
-                    <div class="col-4 col-6-medium col-12-small">
-                        <video class="responsive-video" width="1920" muted loop playsinline controls>
-                            <source src="https://i.gyazo.com/9526071a1693fa4de389949e41f9ec9a.mp4"
-                                    type="video/mp4"/>
-                        </video>
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                        <img src="images/blender/Fuegoh1.png" alt="" class="image fit">
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                        <img src="images/blender/CatArival2.png" alt="" class="image fit">
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                        <img src="images/blender/Vox1.png" alt="" class="image fit">
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                        <img src="images/blender/Moon3.png" alt="" class="image fit">
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="row">
-                    <div class="col-4 col-6-medium col-12-small">
-                        <img src="images/blender/Pottery2.png" class="image fit" alt="">
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                        <img src="images/blender/Bowling_Scene_7.png" class="image fit" alt="">
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                        <img src="images/blender/Bowling_Scene_4.png" class="image fit" alt="">
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                        <img src="images/blender/e43c5a631a1aa5d120a315e5ba5269b9.jpg" class="image fit" alt="">
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                        <img src="images/blender/f0b44be35cad141804070f504a11d14f.jpg" class="image fit" alt="">
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                        <img src="images/blender/fa24bcd9e2402e36f05e3badd8b07295.jpg" class="image fit" alt="">
-                    </div>
-                    <div class="col-4 col-6-medium col-12-small">
-                        <img src="images/blender/c84c466a27f5f044a28813164f821434.jpg" class="image fit" alt="">
-                    </div>
-                </div>
-            </section>
-        </article>
-
-    </div>
-
-
-    <!-- Footer -->
-    <div id="footer">
-        <ul class="copyright">
-            <li>&copy; 2023 Abrinsky.</li>
-        </ul>
-    </div>
-
-</div>
-
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-
-</body>
+        <!--        <button-->
+        <!--          hx-get="/assets/content/profile.html"-->
+        <!--          hx-target="#profile"-->
+        <!--        >-->
+        <!--          Games-->
+        <!--        </button>-->
+      </div>
+    </section>
+    <section
+      id="tab-content"
+      hx-get="/assets/content/blendart.html"
+      hx-trigger="load"
+    ></section>
+  </body>
+  <footer>
+    <button
+      _="on click
+                go to url https://www.linkedin.com/in/amg001/"
+    >
+      <i class="fa fa-linkedin-square fa-2x"></i>
+    </button>
+    <button
+      _="on click
+                go to url https://github.com/Abrinsky"
+    >
+      <i class="fa fa-github-square fa-2x"></i>
+    </button>
+    <button
+      _="on click
+                go to url https://twitter.com/_Abrinsky"
+    >
+      <i class="fa fa-twitter-square fa-2x"></i>
+    </button>
+  </footer>
 </html>
