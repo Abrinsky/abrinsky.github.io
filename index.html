@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html  lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
     <script
@@ -25,10 +25,12 @@
     />
     <script src="https://unpkg.com/htmx.org@1.9.6"></script>
     <script src="https://unpkg.com/hyperscript.org@0.9.11"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
     <link rel="stylesheet" href="assets/styles/styles.css" />
   </head>
 
   <body class="">
+
     <section>
       <div class="btn-group">
         <button hx-get="/assets/content/profile.html" hx-target="#tab-content">
@@ -53,26 +55,46 @@
       hx-get="/assets/content/profile.html"
       hx-trigger="load"
     ></section>
+
   </body>
   <footer>
     <button
+      class="hovertext"
+      data-hover="LinkedIn"
       _="on click
                 go to url https://www.linkedin.com/in/amg001/"
     >
       <i class="fa fa-linkedin-square fa-2x"></i>
     </button>
     <button
+      class="hovertext"
+      data-hover="GitHub"
       _="on click
                 go to url https://github.com/Abrinsky"
     >
       <i class="fa fa-github-square fa-2x"></i>
     </button>
     <button
+      class="hovertext"
+      data-hover="Twitter"
       _="on click
                 go to url https://twitter.com/_Abrinsky"
     >
       <i class="fa fa-twitter-square fa-2x"></i>
     </button>
+    <button
+      class="hovertext"
+      data-hover="CEO of HTMX"
+      _="on click
+                go to url https://htmx.ceo/#_Abrinsky"
+    >
+      <i class="fa fa-code fa-2x"></i>
+    </button>
+  </footer>
+  <footer>
+    <div x-data="{ currentYear: new Date().getFullYear() }">
+      <p>© <span x-text="currentYear"></span> Abraham Galinsky</p>
+    </div>
   </footer>
 </html>
 
